@@ -1,0 +1,22 @@
+{
+   "version": "0.2.0",
+   "configurations": [
+       {
+           "request": "launch",
+           "name": "Launch Program",
+           "type": "node",
+           "program": "${workspaceFolder}/src/schedule.ts",
+           "cwd": "${workspaceFolder}",
+           "runtimeExecutable": "deno",
+           "runtimeArgs": [
+               "run",
+               "--unstable",
+               "--inspect",
+               "--inspect-brk",
+               "--allow-all",
+               "${file}"
+           ],
+           "attachSimplePort": 9229
+       }
+   ]
+}
